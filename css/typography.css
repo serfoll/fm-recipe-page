@@ -1,0 +1,37 @@
+/** @format */
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('../assets/fonts/outfit/Outfit-VariableFont_wght.ttf')
+    format('truetype');
+  font-weight: 400, 600, 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Young Serif';
+  src: url('../assets/fonts/young-serif/YoungSerif-Regular.ttf')
+    format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /*typography*/
+  --font-family-outfit: 'Outfit', sans-serif;
+  --font-family-young-serif: 'Young Serif', serif;
+
+  --font-size-body: 1rem;
+  --font-size-detail: calc(13 / 16 * 1rem);
+  --font-size-heading: calc(24 / 16 * 1rem);
+  --font-size-sub-heading: calc(20 / 16 * 1rem);
+
+  --font-weight-regular: 400;
+  --font-weight-sem-bold: 600;
+  --font-weight-bold: 700;
+
+  /*line heights*/
+  --line-height-body: 1.5;
+}

@@ -1,0 +1,56 @@
+/** @format */
+
+@import url('./typography.css');
+
+:root {
+  /* COLORS */
+  --brown-800: hsl(14, 45%, 36%);
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  border: 0;
+  box-sizing: border-box;
+  font: inherit;
+  font-style: normal;
+  letter-spacing: 0;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  vertical-align: baseline;
+}
+
+body {
+  background-color: var(--stone-100);
+  color: var(--gray-950);
+  font-size: var(--font-size-body);
+  font-family: var(--font-family-outfit);
+  font-weight: var(--font-weight-regular);
+  height: 100vh;
+  line-height: var(--line-height-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-young-serif);
+  font-weight: var(--font-weight-regular);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
