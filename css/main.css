@@ -12,6 +12,13 @@
   --rose-800: hsl(332, 51%, 32%);
   --rose-50: hsl(330, 100%, 98%);
   --white: hsl(0, 0%, 100%);
+
+  /* SPACING */
+  --spacing-extra-large: calc(40 / 16 * 1rem);
+  --spacing-large: calc(35 / 16 * 1rem);
+  --spacing-medium: calc(30 / 16 * 1rem);
+  --spacing-small: calc(20 / 16 * 1rem);
+  --spacing-extra-small: 1rem;
 }
 
 * {
