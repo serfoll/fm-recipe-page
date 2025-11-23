@@ -130,8 +130,6 @@ hr {
 /* LIST */
 .list {
   list-style: none;
-}
-.list {
   padding-inline-start: calc(7 / 16 * 1rem);
 }
 
@@ -195,10 +193,14 @@ hr {
   text-align: left;
 }
 
-.nutrition__table th,
-.nutrition__table td {
+.nutrition__table tr th,
+.nutrition__table tr td {
   border-block-end: var(--border-solid);
   padding-block: var(--spacing-xs);
+}
+
+.nutrition__table tr th {
+  padding-inline-start: calc(30 / 16 * 1rem);
 }
 
 .nutrition__table tr:first-of-type th,
@@ -210,10 +212,6 @@ hr {
 .nutrition__table tr:last-of-type td {
   border-block-end: none;
   padding-block-end: 0;
-}
-
-.nutrition__table th {
-  padding-inline-start: calc(30 / 16 * 1rem);
 }
 
 .nutrition__table strong {
