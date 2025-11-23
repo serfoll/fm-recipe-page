@@ -41,3 +41,9 @@
   --line-height-body: 150%;
   --line-height-heading: 105%;
 }
+
+@media (min-width: 48rem) {
+  :root {
+    --font-size-heading: calc(40 / 16 * 1rem);
+  }
+}

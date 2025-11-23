@@ -28,6 +28,7 @@
   --mobile: calc(375 / 16 * 1rem);
 
   /* RADIUS */
+  --radius-m: calc(24 / 16 * 1rem);
   --radius-s: calc(10 / 16 * 1rem);
 
   /* BORDERS */
@@ -214,6 +215,7 @@ hr {
 .nutrition__table th {
   padding-inline-start: calc(30 / 16 * 1rem);
 }
+
 .nutrition__table strong {
   color: var(--brown-800);
 }
@@ -222,6 +224,7 @@ hr {
 
 footer {
   background-color: var(--white);
+  width: 100%;
 }
 
 .attribution {
@@ -238,4 +241,55 @@ footer {
 .attribution a:hover,
 .attribution a:active {
   color: var(--brown-800);
+}
+
+@media (min-width: 48rem) {
+  .hero {
+    background-color: var(--white);
+    padding: var(--spacing-xxl);
+    padding-block-end: 0;
+  }
+
+  .hero--img {
+    border-radius: var(--radius-s);
+  }
+
+  .nutrition__table tr {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .nutrition__table th {
+    padding-inline-start: calc(48 / 16 * 1rem);
+    width: 50%;
+  }
+
+  .nutrition__table td {
+    position: relative;
+    width: 50%;
+  }
+
+  footer {
+    padding-block: var(--spacing-l);
+    position: relative;
+    top: calc(-1 / 16 * 1rem);
+  }
+}
+
+@media (min-width: 64rem) {
+  body {
+    padding-block: calc(124 / 16 * 1rem);
+  }
+
+  main {
+    padding-inline: var(--spacing-xxl);
+  }
+
+  .wrapper {
+    border-radius: var(--radius-m);
+    max-width: calc(736 / 16 * 1rem);
+    overflow-x: hidden;
+  }
 }
