@@ -15,25 +15,24 @@
     <title>Frontend Mentor | Recipe page</title>
   </head>
   <body>
-    <div class="wrapper">
-      <figure class="hero">
-        <img
-          class="hero--img"
-          src="./assets/images/image-omelette.jpeg"
-          alt="Folded omelette served on plate."
-        />
-      </figure>
-      <main>
-        <div class="intro segment">
-          <h1 class="heading">Simple Omelette Recipe</h1>
-          <p class="intro__summary">
-            An easy and quick dish, perfect for any meal. This classic omelette
-            combines beaten eggs cooked to perfection, optionally filled with
-            your choice of cheese, vegetables, or meats.
-          </p>
-        </div>
-        <!-- intro end-->
-        <section class="preparation segment">
+    <header class="wrapper">
+      <img
+        class="hero__img"
+        src="./assets/images/image-omelette.jpeg"
+        alt="Folded omelette served on plate."
+      />
+      <div class="header__content">
+        <h1 class="heading">Simple Omelette Recipe</h1>
+        <p class="intro__summary">
+          An easy and quick dish, perfect for any meal. This classic omelette
+          combines beaten eggs cooked to perfection, optionally filled with your
+          choice of cheese, vegetables, or meats.
+        </p>
+      </div>
+    </header>
+    <main class="wrapper">
+      <article>
+        <section class="segment segment--prep">
           <h2 class="subheading subheading--prep">Preparation time</h2>
           <ul class="list">
             <li class="list__item">
@@ -57,7 +56,7 @@
           </ul>
         </section>
         <!-- prepration end-->
-        <section class="ingredients segment">
+        <section class="segment">
           <h2 class="subheading">Ingredients</h2>
           <ul class="list">
             <li class="list__item">
@@ -87,12 +86,12 @@
         </section>
         <hr />
         <!-- ingredients end -->
-        <section class="instructions segment">
+        <section class="segment">
           <h2 class="subheading">Instructions</h2>
           <ol class="list list--number">
             <li class="list__item">
               <p class="list__item--text">
-                <strong> Beat the eggs:</strong> In a bowl, beat the eggs with a
+                <strong>Beat the eggs:</strong> In a bowl, beat the eggs with a
                 pinch of salt and pepper until they are well mixed. You can add
                 a tablespoon of water or milk for a fluffier texture.
               </p>
@@ -100,7 +99,7 @@
 
             <li class="list__item">
               <p class="list__item--text">
-                <strong> Heat the pan:</strong>
+                <strong>Heat the pan:</strong>
                 Place a non-stick frying pan over medium heat and add butter or
                 oil.
               </p>
@@ -108,7 +107,7 @@
 
             <li class="list__item">
               <p class="list__item--text">
-                <strong> Cook the omelette:</strong> Once the butter is melted
+                <strong>Cook the omelette:</strong> Once the butter is melted
                 and bubbling, pour in the eggs. Tilt the pan to ensure the eggs
                 evenly coat the surface.
               </p>
@@ -125,7 +124,7 @@
 
             <li class="list__item">
               <p class="list__item--text">
-                <strong> Fold and serve:</strong> As the omelette continues to
+                <strong>Fold and serve:</strong> As the omelette continues to
                 cook, carefully lift one edge and fold it over the fillings. Let
                 it cook for another minute, then slide it onto a plate.
               </p>
@@ -133,7 +132,7 @@
 
             <li class="list__item">
               <p class="list__item--text">
-                <strong> Enjoy:</strong> Serve hot, with additional salt and
+                <strong>Enjoy:</strong> Serve hot, with additional salt and
                 pepper if needed.
               </p>
             </li>
@@ -141,7 +140,7 @@
         </section>
         <hr />
         <!-- instructions end -->
-        <section class="nutrition segment">
+        <section class="segment segment--nutrition">
           <h2 class="subheading">Nutrition</h2>
           <table class="nutrition__table">
             <caption>
@@ -169,22 +168,22 @@
           </table>
         </section>
         <!-- nutrition end -->
-      </main>
-      <footer class="attribution">
-        Challenge by
-        <a
-          href="https://www.frontendmentor.io?ref=challenge"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Frontend Mentor</a
-        >. Coded by
-        <a
-          href="https://github.com/serfoll"
-          rel="noopener noreferrer"
-          target="_blank"
-          >serfoll</a
-        >.
-      </footer>
-    </div>
+      </article>
+    </main>
+    <footer class="attribution wrapper">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://github.com/serfoll"
+        rel="noopener noreferrer"
+        target="_blank"
+        >serfoll</a
+      >.
+    </footer>
   </body>
 </html>
