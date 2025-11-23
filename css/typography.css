@@ -25,13 +25,19 @@
 
   --font-size-body: 1rem;
   --font-size-detail: calc(13 / 16 * 1rem);
-  --font-size-heading: calc(30 / 16 * 1rem);
-  --font-size-sub-heading: calc(20 / 16 * 1rem);
+  --font-size-heading: calc(34 / 16 * 1rem);
+  --font-size-heading-sub: calc(28 / 16 * 1rem);
+  --font-size-heading-detail: calc(20 / 16 * 1rem);
 
   --font-weight-regular: 400;
-  --font-weight-sem-bold: 600;
+  --font-weight-bold-semi: 600;
   --font-weight-bold: 700;
 
+  /* letter spacing*/
+  --letter-spacing-bold: calc(1 / 16 * 1rem);
+  --letter-spacing-normal: calc(0.3 / 16 * 1rem);
+
   /*line heights*/
-  --line-height-body: 1.5;
+  --line-height-body: 150%;
+  --line-height-heading: 105%;
 }

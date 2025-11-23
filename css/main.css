@@ -5,6 +5,7 @@
 :root {
   /* COLORS */
   --brown-800: hsl(14, 45%, 36%);
+  --grey: hsl(0, 0%, 88%);
   --stone-100: hsl(30, 54%, 90%);
   --stone-150: hsl(30, 18%, 87%);
   --stone-600: hsl(30, 10%, 34%);
@@ -14,15 +15,28 @@
   --white: hsl(0, 0%, 100%);
 
   /* SPACING */
-  --spacing-extra-large: calc(40 / 16 * 1rem);
-  --spacing-large: calc(35 / 16 * 1rem);
-  --spacing-medium: calc(30 / 16 * 1rem);
-  --spacing-small: calc(20 / 16 * 1rem);
-  --spacing-extra-small: 1rem;
+  --spacing-xxl: calc(40 / 16 * 1rem);
+  --spacing-xl: calc(35 / 16 * 1rem);
+  --spacing-l: calc(32 / 16 * 1rem);
+  --spacing-m: calc(24 / 16 * 1rem);
+  --spacing-s: calc(20 / 16 * 1rem);
+  --spacing-xs: 1rem;
+  --spacing-xxs: calc(12 / 16 * 1rem);
+
+  /* DIMENSSIONS*/
+  --dedsktop: calc(1440 / 16 * 1rem);
+  --mobile: calc(375 / 16 * 1rem);
+
+  /* RADIUS */
+  --radius-s: calc(10 / 16 * 1rem);
+
+  /* BORDERS */
+  --border-solid: calc(1 / 16 * 1rem) solid var(--grey);
 }
 
-* {
-  border: 0;
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   font: inherit;
   font-style: normal;
@@ -35,12 +49,12 @@
 
 body {
   background-color: var(--stone-100);
-  color: var(--gray-950);
+  color: var(--stone-600);
   font-size: var(--font-size-body);
   font-family: var(--font-family-outfit);
   font-weight: var(--font-weight-regular);
-  height: 100vh;
   line-height: var(--line-height-body);
+  letter-spacing: var(--letter-spacing-normal);
 }
 
 h1,
@@ -49,15 +63,179 @@ h3,
 h4,
 h5,
 h6 {
+  color: var(--stone-900);
   font-family: var(--font-family-young-serif);
   font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-heading);
+  letter-spacing: var(--letter-spacing-bold);
+  margin-block-end: var(--spacing-m);
+}
+
+.wrapper {
+  margin: auto;
+}
+
+/* HERO START*/
+
+.hero {
+  width: 100%;
+}
+
+.hero--img {
+  display: block;
+  width: 100%;
+}
+
+/* MAIN */
+
+main {
+  background-color: var(--white);
+  padding-inline: var(--spacing-l);
+  padding-block: var(--spacing-xxl);
+}
+
+.segment {
+  display: block;
+  margin-block-end: var(--spacing-l);
+}
+
+hr {
+  border: none;
+  border-block-end: var(--border-solid);
+  margin-block-end: var(--spacing-l);
+}
+
+.heading {
+  font-size: var(--font-size-heading);
+}
+
+.preparation {
+  background-color: var(--rose-50);
+  border-radius: var(--radius-s);
+  padding: var(--spacing-m);
+}
+
+.subheading {
+  color: var(--brown-800);
+  font-size: var(--font-size-heading-sub);
+}
+
+.subheading--prep {
+  color: var(--rose-800);
+  font-family: var(--font-family-outfit);
+  font-size: var(--font-size-heading-detail);
+  font-weight: var(--font-weight-bold-semi);
+  margin-block-end: calc(15 / 16 * 1rem);
+}
+
+/* LIST */
+
+.list {
+  padding-inline-start: calc(7 / 16 * 1rem);
+}
+
+.list__item {
+  align-items: center;
+  display: flex;
+  gap: var(--spacing-l);
+  margin-block-end: var(--spacing-xxs);
+}
+
+.list__item:last-of-type {
+  margin-block-end: 0;
+}
+
+.list__item--marker {
+  background-color: var(--brown-800);
+  border-radius: 50%;
+  padding: calc(2 / 16 * 1rem);
+}
+
+.preparation .list__item--marker {
+  background-color: var(--rose-800);
+}
+
+.list__item strong {
+  font-weight: var(--font-weight-bold);
+}
+
+.list--number {
+  margin-inline-start: calc(14 / 16 * 1rem);
+}
+
+.list--number .list__item {
+  display: list-item;
+}
+
+.list--number .list__item::marker {
+  color: var(--brown-800);
+  font-weight: var(--font-weight-bold);
+}
+
+.list--number .list__item .list__item--text {
+  margin-inline-start: var(--spacing-m);
+}
+
+/* NUTRITION */
+
+.nutrition {
+  margin-block-end: 0;
+}
+
+.nutrition__table {
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
+}
+
+.nutrition__table caption {
+  letter-spacing: var(--letter-spacing-normal);
+  margin-block-end: var(--spacing-m);
+  text-align: left;
+}
+
+.nutrition__table th,
+.nutrition__table td {
+  border-block-end: var(--border-solid);
+  padding-block: var(--spacing-xs);
+}
+
+.nutrition__table tr:first-of-type th,
+.nutrition__table tr:first-of-type td {
+  padding-block-start: 0;
+}
+
+.nutrition__table tr:last-of-type th,
+.nutrition__table tr:last-of-type td {
+  border-block-end: none;
+  padding-block-end: 0;
+}
+
+.nutrition__table th {
+  padding-inline-start: calc(30 / 16 * 1rem);
+}
+.nutrition__table strong {
+  color: var(--brown-800);
+}
+
+/* FOOTER */
+
+footer {
+  background-color: var(--white);
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: var(--font-size-detail);
   text-align: center;
 }
 
-.attribution a {
-  color: hsl(228, 45%, 44%);
+.attribution a,
+.attribution a:visited {
+  color: var(--rose-800);
+  font-weight: var(--font-weight-bold-semi);
+}
+
+.attribution a:hover,
+.attribution a:active {
+  color: var(--brown-800);
 }
